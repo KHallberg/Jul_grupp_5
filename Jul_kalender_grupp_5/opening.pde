@@ -1,0 +1,1 @@
+/*öppnas var 10 min på rätt dag*/

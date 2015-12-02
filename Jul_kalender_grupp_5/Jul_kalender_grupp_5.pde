@@ -20,6 +20,6 @@ void draw() {
   image(Kula, 190, 360, 30, 30);
   image(Kula, 150, 340, 30, 30);
   image(Kula, 80, 400, 30, 30);
-  text("12", 87, 395);
+  text("12", 87, 395);            
 
 }
