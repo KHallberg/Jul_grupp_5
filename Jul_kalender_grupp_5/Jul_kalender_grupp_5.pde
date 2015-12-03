@@ -46,6 +46,7 @@ void draw() {
   ball(width/5, height/3.1);
   //del 4- räknat nerifrån-vänster till höger
   ball(width/6, height/4.8);
+  ballnumber(width/15.3, height/1.62, "12");
   
   
 }
