@@ -17,6 +17,7 @@ void draw() {
   image(winterBackground, 0, 0, width, height);
   image(Star, 125, 35, 70, 70);
   ball(width/15, height/1.72);
+  ball(width/15, height/1.72);
 
 
   

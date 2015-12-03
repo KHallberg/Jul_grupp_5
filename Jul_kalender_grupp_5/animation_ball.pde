@@ -1,3 +1,5 @@
+ /*
+ 
  // Moving circle shape size and colour details
   stroke(0);  
   fill(122, 222, 33);  
@@ -17,3 +19,5 @@ void mousePressed() {
   going = true;
 }
 //https://processing.org/discourse/beta/num_1224805492.html
+
+*/
