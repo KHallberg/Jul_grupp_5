@@ -1,4 +1,4 @@
-if (min==10) {
+{if (min==10) {
 } else if (min==20) {//animationen
 } else if (min==30) {//animationen
 } else if (min==40) {//animationen
