@@ -1,5 +1,8 @@
 
-
+int sec=second();
+int min=minute();
+int hour=hour();
+int day=day();
 PImage winterBackground;
 PImage Star;
 PImage Kula;
@@ -15,7 +18,7 @@ void draw() {
   println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
   image(winterBackground, 0, 0, width, height);
   image(Star, width/6.4, height/28, width/17.8, height/10.4);
-  
+
   //nerifrån och upp till vänster
   ball(width/21, height/1.46);
   ball(width/16, height/1.72);
@@ -47,6 +50,6 @@ void draw() {
   //del 4- räknat nerifrån-vänster till höger
   ball(width/6, height/4.8);
   ballnumber(width/15.3, height/1.62, "12");
-  
-  
+  println(hour, min);
+
 }
