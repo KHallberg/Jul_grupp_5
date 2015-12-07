@@ -312,17 +312,17 @@ void Calender() {
       santa(bX24, bY24);
     }
   }
-  if (min==12) {
-    setup();
-  } else if (min==22) {
-    setup();
-  } else if (min ==32) {
-    setup();
-  } else if (min==42) {
-    setup();
-  } else if (min==52) {
-    setup();
-  } else if (min==02) {
-    setup();
-  }
+  //if (min==12) {
+  //  setup();
+  //} else if (min==22) {
+  //  setup();
+  //} else if (min ==32) {
+  //  setup();
+  //} else if (min==42) {
+  //  setup();
+  //} else if (min==52) {
+  //  setup();
+  //} else if (min==02) {
+  //  setup();
+  //}
 }
