@@ -1,23 +1,303 @@
- /*
- 
- // Moving circle shape size and colour details
-  stroke(0);  
-  fill(122, 222, 33);  
-  ellipse(circleX, circleY, 22, 6);  
-   
-  // Only move the circle when "going" is true
-  if (going) {
-    //speed of movement
-    pos += 0.1; // Change value to modify speed
-    circleX = int(centerX + 0.5 * diskW * sin(pos));
-    circleY = int(centerY + 0.5 * diskH * cos(pos));
-  }
-}  
- 
-// Set going to true when the mouse is pressed!
-void mousePressed() {  
-  going = true;
-}
-//https://processing.org/discourse/beta/num_1224805492.html
+ //Ball moving veriables
+float beginX;          // Initial x-coordinate
+float beginY;          // Initial y-coordinate
+float endX;            // Final x-coordinate
+float endY;            // Final y-coordinate
+float distX;          // X-axis distance to move
+float distY;          // Y-axis distance to move
+float exponent;       // Determines the curve
+float x;              // Current x-coordinate
+float y;              // Current y-coordinate
+float step;          // Size of each step along the path
+float pct;          // Percentage traveled (0.0 to 1.0)
 
-*/
+
+void santa(float santaXPos, float santaYPosStop) {
+
+
+  frameRate(5);
+
+
+  if (santaYPos%2==0) {
+    image(santaA, santaXPos, santaYPos, width/21.34, height/9.9);
+  } else {
+    image(santaB, santaXPos, santaYPos, width/21.34, height/9.9);
+  }
+
+  if (santaYPos>santaYPosStop) { 
+    santaYPos =santaYPos -3;
+  }
+  if (santaYPos<=santaYPosStop) {
+    if (ballNbr==1) {                  // if the value of ballNbr is 1, move the ball from tree to snow in a curve motion
+      distX = endX - bX1;            
+      distY = endY - bY1;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX1 + (pct * distX);
+        y = bY1 + (pow(pct, exponent) * distY);      
+      }
+      bX1=x;                          // the end value for the ball
+      bY1=y;
+    }
+    if (bX1==endX) {                    // load image when ball has landed
+     
+      image(lucka5, width/2.3, height/6, width/2.28, height/1.81);
+     }
+    if (ballNbr==2) {
+      distX = endX - bX2;
+      distY = endY - bY2;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX2 + (pct * distX);
+        y = bY2 + (pow(pct, exponent) * distY);
+      }
+      bX2=x;
+      bY2=y;
+    }
+    if (bX2==endX) {
+      image(lucka5, 200, height/6, width/2.28, height/1.81);
+    }
+    if (ballNbr==3) {
+      distX = endX - bX3;
+      distY = endY - bY3;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX3 + (pct * distX);
+        y = bY3 + (pow(pct, exponent) * distY);
+      }
+      bX3=x;
+      bY3=y;
+    }
+    if (ballNbr==4) {
+      distX = endX - bX4;
+      distY = endY - bY4;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX4 + (pct * distX);
+        y = bY4 + (pow(pct, exponent) * distY);
+      }
+      bX4=x;
+      bY4=y;
+    }
+    if (ballNbr==5) {
+      distX = endX - bX5;
+      distY = endY - bY5;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX5 + (pct * distX);
+        y = bY5 + (pow(pct, exponent) * distY);
+      }
+      bX5=x;
+      bY5=y;
+    }
+    if (ballNbr==6) {
+      distX = endX - bX6;
+      distY = endY - bY6;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX6 + (pct * distX);
+        y = bY6 + (pow(pct, exponent) * distY);
+      }
+      bX6=x;
+      bY6=y;
+    }
+    if (ballNbr==7) {
+      distX = endX - bX7;
+      distY = endY - bY7;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX7 + (pct * distX);
+        y = bY7 + (pow(pct, exponent) * distY);
+      }
+      bX7=x;
+      bY7=y;
+    }
+    if (ballNbr==8) {
+      distX = endX - bX8;
+      distY = endY - bY8;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX8 + (pct * distX);
+        y = bY8 + (pow(pct, exponent) * distY);
+      }
+      bX8=x;
+      bY8=y;
+    }
+    if (ballNbr==9) {
+      distX = endX - bX9;
+      distY = endY - bY9;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX9 + (pct * distX);
+        y = bY9 + (pow(pct, exponent) * distY);
+      }
+      bX9=x;
+      bY9=y;
+    }
+    if (ballNbr==10) {
+      distX = endX - bX10;
+      distY = endY - bY10;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX10 + (pct * distX);
+        y = bY10 + (pow(pct, exponent) * distY);
+      }
+      bX10=x;
+      bY10=y;
+    }
+    if (ballNbr==11) {
+      distX = endX - bX11;
+      distY = endY - bY11;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX11 + (pct * distX);
+        y = bY11 + (pow(pct, exponent) * distY);
+      }
+      bX11=x;
+      bY11=y;
+    }
+    if (ballNbr==12) {
+      distX = endX - bX12;
+      distY = endY - bY12;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX12 + (pct * distX);
+        y = bY12 + (pow(pct, exponent) * distY);
+      }
+      bX12=x;
+      bY12=y;
+    }
+    if (ballNbr==13) {
+      distX = endX - bX13;
+      distY = endY - bY13;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX13 + (pct * distX);
+        y = bY13 + (pow(pct, exponent) * distY);
+      }
+      bX13=x;
+      bY13=y;
+    }
+    if (ballNbr==14) {
+      distX = endX - bX14;
+      distY = endY - bY14;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX14 + (pct * distX);
+        y = bY14 + (pow(pct, exponent) * distY);
+      }
+      bX14=x;
+      bY14=y;
+    }
+    if (ballNbr==15) {
+      distX = endX - bX15;
+      distY = endY - bY15;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX15 + (pct * distX);
+        y = bY15 + (pow(pct, exponent) * distY);
+      }
+      bX15=x;
+      bY15=y;
+    }
+    if (ballNbr==16) {
+      distX = endX - bX16;
+      distY = endY - bY16;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX16 + (pct * distX);
+        y = bY16 + (pow(pct, exponent) * distY);
+      }
+      bX16=x;
+      bY16=y;
+    }
+    if (ballNbr==17) {
+      distX = endX - bX17;
+      distY = endY - bY17;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX17 + (pct * distX);
+        y = bY17 + (pow(pct, exponent) * distY);
+      }
+      bX17=x;
+      bY17=y;
+    }
+    if (ballNbr==18) {
+      distX = endX - bX18;
+      distY = endY - bY18;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX18 + (pct * distX);
+        y = bY18 + (pow(pct, exponent) * distY);
+      }
+      bX18=x;
+      bY18=y;
+    }
+    if (ballNbr==19) {
+      distX = endX - bX19;
+      distY = endY - bY19;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX19 + (pct * distX);
+        y = bY19 + (pow(pct, exponent) * distY);
+      }
+      bX19=x;
+      bY19=y;
+    }
+    if (ballNbr==20) {
+      distX = endX - bX20;
+      distY = endY - bY20;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX20 + (pct * distX);
+        y = bY20 + (pow(pct, exponent) * distY);
+      }
+      bX20=x;
+      bY20=y;
+    }
+    if (ballNbr==21) {
+      distX = endX - bX21;
+      distY = endY - bY21;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX21 + (pct * distX);
+        y = bY21 + (pow(pct, exponent) * distY);
+      }
+      bX21=x;
+      bY21=y;
+    }
+    if (ballNbr==22) {
+      distX = endX - bX22;
+      distY = endY - bY22;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX22 + (pct * distX);
+        y = bY22 + (pow(pct, exponent) * distY);
+      }
+      bX22=x;
+      bY22=y;
+    }
+    if (ballNbr==23) {
+      distX = endX - bX23;
+      distY = endY - bY23;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX23 + (pct * distX);
+        y = bY23 + (pow(pct, exponent) * distY);
+      }
+      bX23=x;
+      bY23=y;
+    }
+    if (ballNbr==24) {
+      distX = endX - bX24;
+      distY = endY - bY24;
+      pct += step;
+      if (pct < 1.0) {
+        x = bX24 + (pct * distX);
+        y = bY24 + (pow(pct, exponent) * distY);
+      }
+      bX24=x;
+      bY24=y;
+    }
+  }
+}
