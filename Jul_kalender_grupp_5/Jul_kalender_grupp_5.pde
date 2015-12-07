@@ -1,8 +1,8 @@
 
-int sec=second();
-int min=minute();
-int hour=hour();
-int day=day();
+int sec;
+int min;
+int hour;
+int day;
 
 float santaYPos;
 float bX1;
@@ -92,6 +92,11 @@ void setup() {
   //size(1920,1080);
   size(1280, 720);
   smooth();
+  sec=second();
+  min=minute();
+  hour=hour();
+  day=day();
+
   santaYPos= 565;
   //Ball moving veriables
   endX = width/2.25;    // Final x-coordinate
@@ -158,7 +163,6 @@ void setup() {
   winterBackground = loadImage("img/WinterLandscape.jpg");
   Star = loadImage("img/Star.png");
   Kula = loadImage("img/kula.png");
-
 }
 void draw() {
   //println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
@@ -166,17 +170,13 @@ void draw() {
 
   image(Star, width/6.4, height/28, width/17.8, height/10.4);
 
-int sec=second();
-int min=minute();
-int hour=hour();
-int day=day();
 
-  println("day: "+day,"hour: "+hour, "min:"+min,"sec: "+sec);
+  println("day: "+day, "hour: "+hour, "min:"+min, "sec: "+sec);
 
   image(Star, bX24, bY24, width/17.8, height/10.4);
   starnumber(width/5.8, height/10.5, "24");
 
- //nerifrån från vänster till höger
+  //nerifrån från vänster till höger
 
   ball(bX1, bY1);
   ballnumber(width/18, height/1.385, "1");
@@ -224,8 +224,8 @@ int day=day();
   ballnumber(width/5.88, height/4.1, "22");
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
-  
-Calender();
+
+  Calender();
 
 
   // time
@@ -248,5 +248,4 @@ Calender();
     //println("BallX : "+ballX+" ball Y: "+ballY);
     setup();
   }
-  
 }
