@@ -58,6 +58,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX2==endX) {
       lucka2 = loadImage("img/lucka2.png");
       image(lucka2, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie2 = new Movie(this, "Fluga.mp4");
+      myMovie2.loop();
+      image(myMovie2, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==3) {
       distX = endX - bX3;
@@ -148,6 +151,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX8==endX) {                    // load image when ball has landed
       lucka8 = loadImage("img/lucka8.png");
       image(lucka8, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie8 = new Movie(this, "Tomtar.mp4");
+      myMovie8.loop();
+      image(myMovie8, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==9) {
       distX = endX - bX9;
@@ -223,6 +229,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX13==endX) {                    // load image when ball has landed
       lucka13 = loadImage("img/lucka13.png");
       image(lucka13, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie13 = new Movie(this, "Julloppa.mp4");
+      myMovie13.loop();
+      image(myMovie13, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==14) {
       distX = endX - bX14;
@@ -253,6 +262,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX15==endX) {                    // load image when ball has landed
       lucka15 = loadImage("img/lucka15.png");
       image(lucka15, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie15 = new Movie(this, "Pappersflygplan.mp4");
+      myMovie15.loop();
+      image(myMovie15, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==16) {
       distX = endX - bX16;
@@ -328,6 +340,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX20==endX) {                    // load image when ball has landed
       lucka20 = loadImage("img/lucka20.png");
       image(lucka20, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie20 = new Movie(this, "Folieboll.mp4");
+      myMovie20.loop();
+      image(myMovie20, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==21) {
       distX = endX - bX21;
@@ -343,6 +358,9 @@ void santa(float santaXPos, float santaYPosStop) {
     if (bX21==endX) {                    // load image when ball has landed
       lucka21 = loadImage("img/lucka21.png");
       image(lucka21, width/2.8, height/14, width/1.6, height/1.3);
+      myMovie21 = new Movie(this, "Handled.mp4");
+      myMovie21.loop();
+      image(myMovie21, width/2.35, height/3.2, width/2.2, height/2.2);
     }
     if (ballNbr==22) {
       distX = endX - bX22;
@@ -390,4 +408,7 @@ void santa(float santaXPos, float santaYPosStop) {
       image(lucka24, width/2.8, height/14, width/1.6, height/1.3);
     }
   }
+}
+void movieEvent(Movie m) {
+  m.read();
 }

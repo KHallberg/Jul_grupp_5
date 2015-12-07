@@ -1,8 +1,24 @@
+import processing.video.*;
+Movie myMovie2;
+Movie myMovie8;
+Movie myMovie13;
+Movie myMovie15;
+Movie myMovie20;
+Movie myMovie21;
 
+
+<<<<<<< Updated upstream
 int sec;
 int min;
 int hour;
 int day;
+=======
+int sec=second();
+int min=minute();
+int hour=hour();
+int day=day();
+PVector[] snowFlakes;
+>>>>>>> Stashed changes
 
 float santaYPos;
 float bX1;
@@ -106,6 +122,13 @@ void setup() {
   y = 0.0;        // Current y-coordinate
   step = 0.03;    // Size of each step along the path
   pct = 0.0;      // Percentage traveled (0.0 to 1.0)
+  
+        snowFlakes = new PVector[500];
+  for (int i = 0; i < snowFlakes.length; i++) {
+    snowFlakes[i] = new PVector(); 
+    snowFlakes[i].x = random(0, width);
+    snowFlakes[i].y = random(0, height);
+  }
 
   clickOnBall = false;
   clickOnLucka = false;
@@ -224,8 +247,14 @@ void draw() {
   ballnumber(width/5.88, height/4.1, "22");
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
+<<<<<<< Updated upstream
 
   Calender();
+=======
+  snow();
+  
+Calender();
+>>>>>>> Stashed changes
 
 
   // time
