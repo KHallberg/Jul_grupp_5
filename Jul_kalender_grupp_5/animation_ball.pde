@@ -28,6 +28,7 @@ void santa(float santaXPos, float santaYPosStop) {
     santaYPos =santaYPos -3;
   }
   if (santaYPos<=santaYPosStop) {
+    //frameRate(20);
     if (ballNbr==1) {                  // if the value of ballNbr is 1, move the ball from tree to snow in a curve motion
       distX = endX - bX1;            
       distY = endY - bY1;
