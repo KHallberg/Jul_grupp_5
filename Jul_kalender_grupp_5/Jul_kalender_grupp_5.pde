@@ -7,18 +7,13 @@ Movie myMovie20;
 Movie myMovie21;
 
 
-<<<<<<< Updated upstream
+
 int sec;
 int min;
 int hour;
 int day;
-=======
-int sec=second();
-int min=minute();
-int hour=hour();
-int day=day();
 PVector[] snowFlakes;
->>>>>>> Stashed changes
+
 
 float santaYPos;
 float bX1;
@@ -105,13 +100,12 @@ PImage lucka24;
 
 
 void setup() {
+
+
   //size(1920,1080);
   size(1280, 720);
   smooth();
-  sec=second();
-  min=minute();
-  hour=hour();
-  day=day();
+
 
   santaYPos= 565;
   //Ball moving veriables
@@ -122,14 +116,13 @@ void setup() {
   y = 0.0;        // Current y-coordinate
   step = 0.03;    // Size of each step along the path
   pct = 0.0;      // Percentage traveled (0.0 to 1.0)
-  
-        snowFlakes = new PVector[500];
+
+  snowFlakes = new PVector[500];
   for (int i = 0; i < snowFlakes.length; i++) {
     snowFlakes[i] = new PVector(); 
     snowFlakes[i].x = random(0, width);
     snowFlakes[i].y = random(0, height);
   }
-
   clickOnBall = false;
   clickOnLucka = false;
   bX1 = width/21;
@@ -247,26 +240,9 @@ void draw() {
   ballnumber(width/5.88, height/4.1, "22");
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
-<<<<<<< Updated upstream
 
   Calender();
-=======
-  snow();
-  
-Calender();
->>>>>>> Stashed changes
-
-
-  // time
-  /* if (d == 17){
-   if (t==10,20,30,40,50,60)
-   skicka in bX17 0ch bY17 i santa) 
-   santa(bX17,bY17);
-   }
-   if (t=2,12,22,32,42,54){
-   setup(); 
-   }
-   */
+  //snow();
 
   if (clickOnBall == true) {       // if click on the area - then print the letter
     //println("BallX : "+ballX+" ball Y: "+ballY);

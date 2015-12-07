@@ -1,3 +1,4 @@
+
 //Ball moving veriables
 float beginX;          // Initial x-coordinate
 float beginY;          // Initial y-coordinate
@@ -26,8 +27,10 @@ void santa(float santaXPos, float santaYPosStop) {
 
   if (santaYPos>santaYPosStop) { 
     santaYPos =santaYPos -3;
+    
   }
   if (santaYPos<=santaYPosStop) {
+    
     //frameRate(20);
     if (ballNbr==1) {                  // if the value of ballNbr is 1, move the ball from tree to snow in a curve motion
       distX = endX - bX1;            
@@ -42,7 +45,7 @@ void santa(float santaXPos, float santaYPosStop) {
     }
     if (bX1==endX) {                    // load image when ball has landed
       lucka1 = loadImage("img/Lucka1.png");
-      image(lucka1, width/2.8, height/14, width/1.6, height/1.3);
+      image(lucka1, width/2.8, height/14, width/1.6, height/1.3);  
     }
     if (ballNbr==2) {
       distX = endX - bX2;
