@@ -180,33 +180,57 @@ int day=day();
   println(day,hour, min,sec);
 
   image(Star, bX24, bY24, width/17.8, height/10.4);
+  starnumber(width/5.8, height/10.5, "24");
 
  //nerifrån från vänster till höger
 
   ball(bX1, bY1);
+  ballnumber(width/18, height/1.385, "1");
   ball(bX2, bY2);
+  ballnumber(width/9.5, height/1.44, "2");
   ball(bX3, bY3);
+  ballnumber(width/6.41, height/1.465, "3");
   ball(bX4, bY4);
+  ballnumber(width/4.76, height/1.465, "4");
   ball(bX5, bY5);
+  ballnumber(width/3.95, height/1.42, "5");
   ball(bX6, bY6);
+  ballnumber(width/3.39, height/1.375, "6");
   ball(bX7, bY7);
+  ballnumber(width/14, height/1.62, "7");
   ball(bX8, bY8);
+  ballnumber(width/8.4, height/1.69, "8");
   ball(bX9, bY9);
+  ballnumber(width/5.7, height/1.73, "9");
   ball(bX10, bY10);
+  ballnumber(width/4.45, height/1.69, "10");
   ball(bX11, bY11);
+  ballnumber(width/3.57, height/1.62, "11");
   ball(bX12, bY12);
+  ballnumber(width/13.5, height/1.96, "12");
   ball(bX13, bY13);
+  ballnumber(width/7.9, height/2.07, "13");
   ball(bX14, bY14);
+  ballnumber(width/5.7, height/2.12, "14");
   ball(bX15, bY15);
+  ballnumber(width/4.45, height/2.07, "15");
   ball(bX16, bY16);
+  ballnumber(width/3.75, height/1.97, "16");
   ball(bX17, bY17);
+  ballnumber(width/10.8, height/2.58, "17");
   ball(bX18, bY18);
+  ballnumber(width/6.95, height/2.78, "18");
   ball(bX19, bY19);
+  ballnumber(width/4.95, height/2.78, "19");
   ball(bX20, bY20);
+  ballnumber(width/3.95, height/2.58, "20");
   ball(bX21, bY21);
+  ballnumber(width/8.3, height/3.65, "21");
   ball(bX22, bY22);
+  ballnumber(width/5.88, height/4.1, "22");
   ball(bX23, bY23);
-  ballnumber(width/15.3, height/1.62, "12");
+  ballnumber(width/4.35, height/3.65, "23");
+  
 
 
 
@@ -230,4 +254,5 @@ int day=day();
     //println("BallX : "+ballX+" ball Y: "+ballY);
     setup();
   }
+  
 }
