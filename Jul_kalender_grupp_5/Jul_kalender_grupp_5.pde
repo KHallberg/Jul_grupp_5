@@ -3,8 +3,6 @@ int sec=second();
 int min=minute();
 int hour=hour();
 int day=day();
-PVector[] snowFlakes;
-
 
 float santaYPos;
 float bX1;
@@ -63,7 +61,31 @@ PImage santaD;
 PImage winterBackground;
 PImage Star;
 PImage Kula;
+PImage lucka1;
+PImage lucka2;
+PImage lucka3;
+PImage lucka4;
 PImage lucka5;
+PImage lucka6;
+PImage lucka7;
+PImage lucka8;
+PImage lucka9;
+PImage lucka10;
+PImage lucka11;
+PImage lucka12;
+PImage lucka13;
+PImage lucka14;
+PImage lucka15;
+PImage lucka16;
+PImage lucka17;
+PImage lucka18;
+PImage lucka19;
+PImage lucka20;
+PImage lucka21;
+PImage lucka22;
+PImage lucka23;
+PImage lucka24;
+
 
 
 void setup() {
@@ -79,13 +101,6 @@ void setup() {
   y = 0.0;        // Current y-coordinate
   step = 0.03;    // Size of each step along the path
   pct = 0.0;      // Percentage traveled (0.0 to 1.0)
-  
-        snowFlakes = new PVector[500];
-  for (int i = 0; i < snowFlakes.length; i++) {
-    snowFlakes[i] = new PVector(); 
-    snowFlakes[i].x = random(0, width);
-    snowFlakes[i].y = random(0, height);
-  }
 
   clickOnBall = false;
   clickOnLucka = false;
@@ -143,7 +158,30 @@ void setup() {
   winterBackground = loadImage("img/WinterLandscape.jpg");
   Star = loadImage("img/Star.png");
   Kula = loadImage("img/kula.png");
-  lucka5 = loadImage("img/lucka_5.png");
+  lucka1 = loadImage("img/Lucka1.png");
+  lucka2 = loadImage("img/lucka2.png");
+  lucka3 = loadImage("img/lucka3.png");
+  lucka4 = loadImage("img/Lucka4.png");
+  lucka5 = loadImage("img/Lucka5.png");
+  lucka6 = loadImage("img/Lucka6.png");
+  lucka7 = loadImage("img/lucka7.png");
+  lucka8 = loadImage("img/lucka8.png");
+  lucka9 = loadImage("img/lucka9.png");
+  lucka10 = loadImage("img/lucka10.png");
+  lucka11 = loadImage("img/lucka11.png");
+  lucka12 = loadImage("img/lucka12.png");
+  lucka13 = loadImage("img/lucka13.png");
+  lucka14 = loadImage("img/lucka14.png");
+  lucka15 = loadImage("img/lucka15.png");
+  lucka16 = loadImage("img/lucka16.png");
+  lucka17 = loadImage("img/lucka17.png");
+  lucka18 = loadImage("img/lucka18.png");
+  lucka19 = loadImage("img/lucka19.png");
+  lucka20 = loadImage("img/lucka20.png");
+  lucka21 = loadImage("img/lucka21.png");
+  lucka22 = loadImage("img/lucka22.png");
+  lucka23 = loadImage("img/lucka23.png");
+  lucka24 = loadImage("img/lucka24.png");
 }
 void draw() {
   println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
@@ -210,7 +248,7 @@ int day=day();
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
   
- snow();
+
 
 
   // time

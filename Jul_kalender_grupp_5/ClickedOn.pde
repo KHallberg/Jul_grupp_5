@@ -5,7 +5,7 @@ float ballY;
 int ballNbr;
 
 boolean luckaArea(float xLucka, float yLucka){
-  if (mouseX > xLucka && mouseX < xLucka+(width/2.28) && mouseY > yLucka && mouseY < yLucka+(height/1.81)) {
+  if (mouseX > xLucka && mouseX < xLucka+(width/1.6) && mouseY > yLucka && mouseY < yLucka+(height/1.3)) {
     return true;
   } else {
     return false;
@@ -22,7 +22,7 @@ boolean ballArea(float xPos, float yPos) {
 
 
 void mouseClicked() { 
-  if (luckaArea(width/2.3,height/6) == true) {        //determines if the "luck area" is clicked or no
+  if (luckaArea(width/2.8,height/14) == true) {        //determines if the "luck area" is clicked or no
     clickOnLucka = !clickOnLucka;
    }
   

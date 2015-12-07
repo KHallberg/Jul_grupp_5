@@ -1,4 +1,4 @@
- //Ball moving veriables
+//Ball moving veriables
 float beginX;          // Initial x-coordinate
 float beginY;          // Initial y-coordinate
 float endX;            // Final x-coordinate
@@ -15,7 +15,7 @@ float pct;          // Percentage traveled (0.0 to 1.0)
 void santa(float santaXPos, float santaYPosStop) {
 
 
-  frameRate(5);
+  frameRate(30);
 
 
   if (santaYPos%2==0) {
@@ -34,15 +34,15 @@ void santa(float santaXPos, float santaYPosStop) {
       pct += step;
       if (pct < 1.0) {
         x = bX1 + (pct * distX);
-        y = bY1 + (pow(pct, exponent) * distY);      
+        y = bY1 + (pow(pct, exponent) * distY);
       }
       bX1=x;                          // the end value for the ball
       bY1=y;
     }
     if (bX1==endX) {                    // load image when ball has landed
-     
-      image(lucka5, width/2.3, height/6, width/2.28, height/1.81);
-     }
+
+      image(lucka1, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==2) {
       distX = endX - bX2;
       distY = endY - bY2;
@@ -55,7 +55,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY2=y;
     }
     if (bX2==endX) {
-      image(lucka5, 200, height/6, width/2.28, height/1.81);
+      image(lucka2, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==3) {
       distX = endX - bX3;
@@ -68,6 +68,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX3=x;
       bY3=y;
     }
+    if (bX3==endX) {                    // load image when ball has landed
+
+      image(lucka3, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==4) {
       distX = endX - bX4;
       distY = endY - bY4;
@@ -78,6 +82,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX4=x;
       bY4=y;
+    }
+    if (bX4==endX) {                    // load image when ball has landed
+
+      image(lucka4, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==5) {
       distX = endX - bX5;
@@ -90,6 +98,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX5=x;
       bY5=y;
     }
+    if (bX5==endX) {                    // load image when ball has landed
+
+      image(lucka5, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==6) {
       distX = endX - bX6;
       distY = endY - bY6;
@@ -100,6 +112,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX6=x;
       bY6=y;
+    }
+    if (bX6==endX) {                    // load image when ball has landed
+
+      image(lucka6, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==7) {
       distX = endX - bX7;
@@ -112,6 +128,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX7=x;
       bY7=y;
     }
+    if (bX7==endX) {                    // load image when ball has landed
+
+      image(lucka7, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==8) {
       distX = endX - bX8;
       distY = endY - bY8;
@@ -122,6 +142,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX8=x;
       bY8=y;
+    }
+    if (bX8==endX) {                    // load image when ball has landed
+
+      image(lucka8, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==9) {
       distX = endX - bX9;
@@ -134,6 +158,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX9=x;
       bY9=y;
     }
+    if (bX9==endX) {                    // load image when ball has landed
+
+      image(lucka9, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==10) {
       distX = endX - bX10;
       distY = endY - bY10;
@@ -144,6 +172,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX10=x;
       bY10=y;
+    }
+    if (bX10==endX) {                    // load image when ball has landed
+
+      image(lucka10, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==11) {
       distX = endX - bX11;
@@ -156,6 +188,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX11=x;
       bY11=y;
     }
+    if (bX11==endX) {                    // load image when ball has landed
+
+      image(lucka11, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==12) {
       distX = endX - bX12;
       distY = endY - bY12;
@@ -166,6 +202,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX12=x;
       bY12=y;
+    }
+    if (bX12==endX) {                    // load image when ball has landed
+
+      image(lucka12, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==13) {
       distX = endX - bX13;
@@ -178,6 +218,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX13=x;
       bY13=y;
     }
+    if (bX13==endX) {                    // load image when ball has landed
+
+      image(lucka13, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==14) {
       distX = endX - bX14;
       distY = endY - bY14;
@@ -188,6 +232,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX14=x;
       bY14=y;
+    }
+    if (bX14==endX) {                    // load image when ball has landed
+
+      image(lucka14, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==15) {
       distX = endX - bX15;
@@ -200,6 +248,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX15=x;
       bY15=y;
     }
+    if (bX15==endX) {                    // load image when ball has landed
+
+      image(lucka15, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==16) {
       distX = endX - bX16;
       distY = endY - bY16;
@@ -210,6 +262,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX16=x;
       bY16=y;
+    }
+    if (bX16==endX) {                    // load image when ball has landed
+
+      image(lucka16, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==17) {
       distX = endX - bX17;
@@ -222,6 +278,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX17=x;
       bY17=y;
     }
+    if (bX17==endX) {                    // load image when ball has landed
+
+      image(lucka17, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==18) {
       distX = endX - bX18;
       distY = endY - bY18;
@@ -232,6 +292,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX18=x;
       bY18=y;
+    }
+    if (bX18==endX) {                    // load image when ball has landed
+
+      image(lucka18, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==19) {
       distX = endX - bX19;
@@ -244,6 +308,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX19=x;
       bY19=y;
     }
+    if (bX19==endX) {                    // load image when ball has landed
+
+      image(lucka19, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==20) {
       distX = endX - bX20;
       distY = endY - bY20;
@@ -254,6 +322,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX20=x;
       bY20=y;
+    }
+    if (bX20==endX) {                    // load image when ball has landed
+
+      image(lucka20, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==21) {
       distX = endX - bX21;
@@ -266,6 +338,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX21=x;
       bY21=y;
     }
+    if (bX21==endX) {                    // load image when ball has landed
+
+      image(lucka21, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==22) {
       distX = endX - bX22;
       distY = endY - bY22;
@@ -276,6 +352,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX22=x;
       bY22=y;
+    }
+    if (bX22==endX) {                    // load image when ball has landed
+
+      image(lucka22, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==23) {
       distX = endX - bX23;
@@ -288,6 +368,10 @@ void santa(float santaXPos, float santaYPosStop) {
       bX23=x;
       bY23=y;
     }
+    if (bX23==endX) {                    // load image when ball has landed
+
+      image(lucka23, width/2.8, height/14, width/1.6, height/1.3);
+    }
     if (ballNbr==24) {
       distX = endX - bX24;
       distY = endY - bY24;
@@ -298,6 +382,10 @@ void santa(float santaXPos, float santaYPosStop) {
       }
       bX24=x;
       bY24=y;
+    }
+    if (bX24==endX) {                    // load image when ball has landed
+
+      image(lucka24, width/2.8, height/14, width/1.6, height/1.3);
     }
   }
 }
