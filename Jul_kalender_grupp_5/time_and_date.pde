@@ -1,8 +1,8 @@
 void Calender() {
   int sec=second();
-int min=minute();
-int hour=hour();
-int day=day();
+  int min=minute();
+  int hour=hour();
+  int day=day();
   if (day==1) {
     if (min==10) {
       santa(bX1, bY1);
