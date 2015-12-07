@@ -158,33 +158,10 @@ void setup() {
   winterBackground = loadImage("img/WinterLandscape.jpg");
   Star = loadImage("img/Star.png");
   Kula = loadImage("img/kula.png");
-  lucka1 = loadImage("img/Lucka1.png");
-  lucka2 = loadImage("img/lucka2.png");
-  lucka3 = loadImage("img/lucka3.png");
-  lucka4 = loadImage("img/Lucka4.png");
-  lucka5 = loadImage("img/Lucka5.png");
-  lucka6 = loadImage("img/Lucka6.png");
-  lucka7 = loadImage("img/lucka7.png");
-  lucka8 = loadImage("img/lucka8.png");
-  lucka9 = loadImage("img/lucka9.png");
-  lucka10 = loadImage("img/lucka10.png");
-  lucka11 = loadImage("img/lucka11.png");
-  lucka12 = loadImage("img/lucka12.png");
-  lucka13 = loadImage("img/lucka13.png");
-  lucka14 = loadImage("img/lucka14.png");
-  lucka15 = loadImage("img/lucka15.png");
-  lucka16 = loadImage("img/lucka16.png");
-  lucka17 = loadImage("img/lucka17.png");
-  lucka18 = loadImage("img/lucka18.png");
-  lucka19 = loadImage("img/lucka19.png");
-  lucka20 = loadImage("img/lucka20.png");
-  lucka21 = loadImage("img/lucka21.png");
-  lucka22 = loadImage("img/lucka22.png");
-  lucka23 = loadImage("img/lucka23.png");
-  lucka24 = loadImage("img/lucka24.png");
+
 }
 void draw() {
-  println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
+  //println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
   image(winterBackground, 0, 0, width, height);
 
   image(Star, width/6.4, height/28, width/17.8, height/10.4);
@@ -194,7 +171,7 @@ int min=minute();
 int hour=hour();
 int day=day();
 
-  println(day,hour, min,sec);
+  println("day: "+day,"hour: "+hour, "min:"+min,"sec: "+sec);
 
   image(Star, bX24, bY24, width/17.8, height/10.4);
   starnumber(width/5.8, height/10.5, "24");
@@ -248,7 +225,7 @@ int day=day();
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
   
-
+Calender();
 
 
   // time
@@ -271,5 +248,5 @@ int day=day();
     //println("BallX : "+ballX+" ball Y: "+ballY);
     setup();
   }
-  Calender();
+  
 }
