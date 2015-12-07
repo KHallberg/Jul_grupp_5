@@ -233,5 +233,5 @@ int day=day();
     //println("BallX : "+ballX+" ball Y: "+ballY);
     setup();
   }
-  
+  Calender();
 }
