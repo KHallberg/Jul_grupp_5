@@ -40,7 +40,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY1=y;
     }
     if (bX1==endX) {                    // load image when ball has landed
-
+      lucka1 = loadImage("img/Lucka1.png");
       image(lucka1, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==2) {
@@ -55,6 +55,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY2=y;
     }
     if (bX2==endX) {
+      lucka2 = loadImage("img/lucka2.png");
       image(lucka2, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==3) {
@@ -69,7 +70,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY3=y;
     }
     if (bX3==endX) {                    // load image when ball has landed
-
+      lucka3 = loadImage("img/lucka3.png");
       image(lucka3, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==4) {
@@ -84,7 +85,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY4=y;
     }
     if (bX4==endX) {                    // load image when ball has landed
-
+      lucka4 = loadImage("img/Lucka4.png");
       image(lucka4, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==5) {
@@ -99,7 +100,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY5=y;
     }
     if (bX5==endX) {                    // load image when ball has landed
-
+      lucka5 = loadImage("img/Lucka5.png");
       image(lucka5, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==6) {
@@ -114,7 +115,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY6=y;
     }
     if (bX6==endX) {                    // load image when ball has landed
-
+      lucka6 = loadImage("img/Lucka6.png");
       image(lucka6, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==7) {
@@ -129,7 +130,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY7=y;
     }
     if (bX7==endX) {                    // load image when ball has landed
-
+      lucka7 = loadImage("img/lucka7.png");
       image(lucka7, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==8) {
@@ -144,7 +145,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY8=y;
     }
     if (bX8==endX) {                    // load image when ball has landed
-
+      lucka8 = loadImage("img/lucka8.png");
       image(lucka8, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==9) {
@@ -159,7 +160,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY9=y;
     }
     if (bX9==endX) {                    // load image when ball has landed
-
+      lucka9 = loadImage("img/lucka9.png");
       image(lucka9, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==10) {
@@ -174,7 +175,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY10=y;
     }
     if (bX10==endX) {                    // load image when ball has landed
-
+      lucka10 = loadImage("img/lucka10.png");
       image(lucka10, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==11) {
@@ -189,7 +190,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY11=y;
     }
     if (bX11==endX) {                    // load image when ball has landed
-
+      lucka11 = loadImage("img/lucka11.png");
       image(lucka11, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==12) {
@@ -204,7 +205,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY12=y;
     }
     if (bX12==endX) {                    // load image when ball has landed
-
+      lucka12 = loadImage("img/lucka12.png");
       image(lucka12, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==13) {
@@ -219,7 +220,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY13=y;
     }
     if (bX13==endX) {                    // load image when ball has landed
-
+      lucka13 = loadImage("img/lucka13.png");
       image(lucka13, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==14) {
@@ -234,7 +235,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY14=y;
     }
     if (bX14==endX) {                    // load image when ball has landed
-
+      lucka14 = loadImage("img/lucka14.png");
       image(lucka14, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==15) {
@@ -249,7 +250,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY15=y;
     }
     if (bX15==endX) {                    // load image when ball has landed
-
+      lucka15 = loadImage("img/lucka15.png");
       image(lucka15, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==16) {
@@ -264,7 +265,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY16=y;
     }
     if (bX16==endX) {                    // load image when ball has landed
-
+      lucka16 = loadImage("img/lucka16.png");
       image(lucka16, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==17) {
@@ -279,7 +280,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY17=y;
     }
     if (bX17==endX) {                    // load image when ball has landed
-
+      lucka17 = loadImage("img/lucka17.png");
       image(lucka17, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==18) {
@@ -294,7 +295,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY18=y;
     }
     if (bX18==endX) {                    // load image when ball has landed
-
+      lucka18 = loadImage("img/lucka18.png");
       image(lucka18, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==19) {
@@ -309,7 +310,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY19=y;
     }
     if (bX19==endX) {                    // load image when ball has landed
-
+      lucka19 = loadImage("img/lucka19.png");
       image(lucka19, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==20) {
@@ -324,7 +325,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY20=y;
     }
     if (bX20==endX) {                    // load image when ball has landed
-
+      lucka20 = loadImage("img/lucka20.png");
       image(lucka20, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==21) {
@@ -339,7 +340,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY21=y;
     }
     if (bX21==endX) {                    // load image when ball has landed
-
+      lucka21 = loadImage("img/lucka21.png");
       image(lucka21, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==22) {
@@ -354,7 +355,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY22=y;
     }
     if (bX22==endX) {                    // load image when ball has landed
-
+      lucka22 = loadImage("img/lucka22.png");
       image(lucka22, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==23) {
@@ -369,7 +370,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY23=y;
     }
     if (bX23==endX) {                    // load image when ball has landed
-
+      lucka23 = loadImage("img/lucka23.png");
       image(lucka23, width/2.8, height/14, width/1.6, height/1.3);
     }
     if (ballNbr==24) {
@@ -384,7 +385,7 @@ void santa(float santaXPos, float santaYPosStop) {
       bY24=y;
     }
     if (bX24==endX) {                    // load image when ball has landed
-
+      lucka24 = loadImage("img/lucka24.png");
       image(lucka24, width/2.8, height/14, width/1.6, height/1.3);
     }
   }
