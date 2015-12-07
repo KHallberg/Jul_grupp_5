@@ -207,7 +207,7 @@ int day=day();
   ball(bX22, bY22);
   ball(bX23, bY23);
   ballnumber(width/15.3, height/1.62, "12");
->>>>>>> origin/master
+
 
 
   // time
