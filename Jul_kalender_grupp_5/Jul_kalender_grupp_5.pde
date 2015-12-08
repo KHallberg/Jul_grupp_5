@@ -139,12 +139,12 @@ void setup() {
   lucka23 = loadImage("img/lucka23.png");
   lucka24 = loadImage("img/lucka24.png");
   
-  //myMovie2 = new Movie(this, "Fluga.mp4");
-  //myMovie8 = new Movie(this, "Tomtar.mp4");
-  //myMovie13 = new Movie(this, "Julloppa.mp4");
-  //myMovie15 = new Movie(this, "Pappersflygplan.mp4");
-  //myMovie20 = new Movie(this, "Folieboll.mp4");
-  //myMovie21 = new Movie(this, "Handled.mp4");
+  myMovie2 = new Movie(this, "Flugamindre.mp4");
+  myMovie8 = new Movie(this, "Tomtarmindre.mp4");
+  myMovie13 = new Movie(this, "Julloppamindre.mp4");
+  myMovie15 = new Movie(this, "Flygplanmindre.mp4");
+  myMovie20 = new Movie(this, "Foliebollmindre.mp4");
+  myMovie21 = new Movie(this, "Handledmindre.mp4");
   
   //santaYPos= 565;
   ////Ball moving veriables
