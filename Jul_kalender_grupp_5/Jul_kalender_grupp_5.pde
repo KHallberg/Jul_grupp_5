@@ -97,22 +97,17 @@ PImage lucka22;
 PImage lucka23;
 PImage lucka24;
 
-
-
 void setup() {
-  //size(1920,1080);
   size(1280, 720);
   smooth();
-  
+
   //background
   santaA = loadImage("img/tomte1.png");
   santaB = loadImage("img/tomte2.png");
   winterBackground = loadImage("img/WinterLandscape.jpg");
   Star = loadImage("img/Star.png");
   Kula = loadImage("img/kula.png");
-  
-  image(winterBackground, 0, 0, width, height);
-  
+
   //images
   lucka1 = loadImage("img/lucka1.png");
   lucka2 = loadImage("img/lucka2.png");
@@ -138,14 +133,14 @@ void setup() {
   lucka22 = loadImage("img/lucka22.png");
   lucka23 = loadImage("img/lucka23.png");
   lucka24 = loadImage("img/lucka24.png");
-  
+
   myMovie2 = new Movie(this, "Flugamindre.mp4");
   myMovie8 = new Movie(this, "Tomtarmindre.mp4");
   myMovie13 = new Movie(this, "Julloppamindre.mp4");
   myMovie15 = new Movie(this, "Flygplanmindre.mp4");
   myMovie20 = new Movie(this, "Foliebollmindre.mp4");
   myMovie21 = new Movie(this, "Handledmindre.mp4");
-  
+
 
   snowFlakes = new PVector[500];
   for (int i = 0; i < snowFlakes.length; i++) {
@@ -153,17 +148,12 @@ void setup() {
     snowFlakes[i].x = random(0, width);
     snowFlakes[i].y = random(0, height);
     init();
-    
   }
- 
 }
 void draw() {
   //println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
   image(winterBackground, 0, 0, width, height);
-
-  image(Star, width/6.4, height/28, width/17.8, height/10.4);
-
-
+  
   println("day: "+day, "hour: "+hour, "min:"+min, "sec: "+sec);
 
   image(Star, bX24, bY24, width/17.8, height/10.4);
