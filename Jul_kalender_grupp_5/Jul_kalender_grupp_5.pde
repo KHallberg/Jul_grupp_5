@@ -122,6 +122,7 @@ void setup() {
     snowFlakes[i].x = random(0, width);
     snowFlakes[i].y = random(0, height);
     init();
+    pyssel();
   }
   //clickOnBall = false;
   //clickOnLucka = false;
@@ -174,11 +175,6 @@ void setup() {
   //bX24 = width/6.4;
   //bY24 = height/28;
 
-  santaA = loadImage("img/Santa_a.png");
-  santaB = loadImage("img/Santa_b.png");
-  winterBackground = loadImage("img/WinterLandscape.jpg");
-  Star = loadImage("img/Star.png");
-  Kula = loadImage("img/kula.png");
 }
 void draw() {
   //println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
