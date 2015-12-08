@@ -50,7 +50,7 @@ void init() {
   bX24 = width/6.4;
   bY24 = height/28;
 
-  santaYPos= 565;
+  santaYPos= height;
   //Ball moving veriables
   endX = width/2.25;    // Final x-coordinate
   endY = height/1.2;     // Final y-coordinate

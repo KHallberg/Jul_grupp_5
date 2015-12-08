@@ -106,6 +106,6 @@ void Calender() {
   }
 
   if (min==2||min==12||min==22||min==32||min==42||min==52 && sec==0) {
-    setup();
+    init();
   }
 }

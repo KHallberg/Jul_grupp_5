@@ -20,13 +20,13 @@ void santa(float santaXPos, float santaYPosStop) {
 
 
   if (santaYPos%2==0) {
-    image(santaA, santaXPos, santaYPos, width/21.34, height/9.9);
+    image(santaA, santaXPos, santaYPos);
   } else {
-    image(santaB, santaXPos, santaYPos, width/21.34, height/9.9);
+    image(santaB, santaXPos, santaYPos);
   }
 
   if (santaYPos>santaYPosStop) { 
-    santaYPos =santaYPos -3;
+    santaYPos =santaYPos -17;
     
   }
   if (santaYPos<=santaYPosStop) {
