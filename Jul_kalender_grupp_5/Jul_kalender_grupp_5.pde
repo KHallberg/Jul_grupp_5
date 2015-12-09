@@ -153,7 +153,7 @@ void setup() {
 void draw() {
   //println("Mouse X : "+mouseX+" Mouse Y: "+mouseY);
   image(winterBackground, 0, 0, width, height);
-  
+
   println("day: "+day, "hour: "+hour, "min:"+min, "sec: "+sec);
 
   image(Star, bX24, bY24, width/17.8, height/10.4);
@@ -207,9 +207,10 @@ void draw() {
   ballnumber(width/5.88, height/4.1, "22");
   ball(bX23, bY23);
   ballnumber(width/4.35, height/3.65, "23");
-
-  Calender();
-  snow();
+  
+  //presentationCalender();
+  //calender();
+  //snow();
 
   if (clickOnBall == true) {       // if click on the area - then print the letter
     santa(ballX, ballY);

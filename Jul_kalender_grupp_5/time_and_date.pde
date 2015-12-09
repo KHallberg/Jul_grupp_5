@@ -1,4 +1,4 @@
-void Calender() {
+void calender() {
   sec=second();
   min=minute();
   hour=hour();
@@ -19,7 +19,7 @@ void Calender() {
       ballNbr =3;
     } else if (day==4) {        
       ballX = width/5;                                                
-      ballY = height/4.55;                            
+      ballY = height/1.55;                            
       ballNbr =4;
     } else if (day==5) {        
       ballX = width/4.1;                                                
